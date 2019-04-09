@@ -60,6 +60,7 @@ class PPMCreate extends Component {
             }
          }else{
             this.setState({[e.target.name]:e.target.value});
+            
          }
       }
     getEditedProduct=()=>{
@@ -131,13 +132,15 @@ class PPMCreate extends Component {
               return  <span className="errormessage">{this.state.priceerror}</span>
             }
         }
+       
       return (
         <div className="editouterdiv">
         <h2>Edit Product</h2> 
+        
         <div className="editinnerdiv" >
-              <div className="editinputdiv">Tile  <input className="editinputboxtitle" type="text" name="producttitle" onChange={this.handleChange} value={this.state.producttitle}/>{displayTitleError()}</div>
-              <div className="editinputdiv">Price <input className="editinputboxprice" type="number" name="productprice" onChange={this.handleChange} value={this.state.productprice}/>{displayPriceError()}</div>
-              <div className="editinputdiv">Image URL  <input className="editinputboxurl" type="text" name="productimageurl" onChange={this.handleChange} value={this.state.productimageurl}/></div>
+              <div className="editinputdiv"><span className="requiredfield">*</span>Tile  <input className="editinputboxtitle" type="text" name="producttitle" onChange={this.handleChange} value={this.state.producttitle}/>{displayTitleError()}</div>
+              <div className="editinputdiv"><span className="requiredfield">*</span>Price <input className="editinputboxprice" type="number" name="productprice" onChange={this.handleChange} value={this.state.productprice}/>{displayPriceError()}</div>
+              <div className="editinputdiv"><span className="requiredfield"></span>Image URL  <input className="editinputboxurl" type="text" name="productimageurl" onChange={this.handleChange} value={this.state.productimageurl}/></div>
              {displayUpdateButton()}
               <div className="deletebuttondiv"><Link  className="deletebutton" onClick={()=>{this.props.deleteProduct(this.state.productid)}} to={`/productlist`}>Delete</Link></div>
         </div>

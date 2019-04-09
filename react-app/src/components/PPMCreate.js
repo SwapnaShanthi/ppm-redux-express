@@ -78,7 +78,7 @@ class PPMCreate extends Component {
     }
     render() {
       const displayCreateButton=()=>{
-       if(this.state.error==="" && this.state.titleerror==="" && this.state.priceerror===""){
+       if(this.state.error==="" && this.state.titleerror==="" && this.state.priceerror==="" && this.state.price!==""&& this.state.title!==""){
 
          return <div className="createbuttondiv"><Link  className="createbutton" onClick={this.createProduct}to={`/productlist`}>Create</Link></div> 
             
@@ -102,9 +102,9 @@ class PPMCreate extends Component {
         <div className="createouterdiv">
            <h2>Create a New Product</h2>
            <div className="createinnerdiv">
-              <div className="inputdiv">Tile  <input className="inputboxtitle" type="text" name="title" onChange={this.handleChange} value={this.state.title}/>{displayTitleError()}</div>
-              <div className="inputdiv">Price <input className="inputboxprice" type="number" name="price" onChange={this.handleChange} value={this.state.price}/>{displayPriceError()}</div>
-              <div className="inputdiv">Image URL  <input className="inputboxurl" type="text" name="imageurl" onChange={this.handleChange} value={this.state.imageurl}/></div>
+              <div className="inputdiv"><span className="requiredfield">*</span>Tile  <input className="inputboxtitle" type="text" name="title" onChange={this.handleChange} value={this.state.title}/>{displayTitleError()}</div>
+              <div className="inputdiv"><span className="requiredfield">*</span>Price <input className="inputboxprice" type="number" name="price" onChange={this.handleChange} value={this.state.price}/>{displayPriceError()}</div>
+              <div className="inputdiv"><span className="requiredfield"></span>Image URL  <input className="inputboxurl" type="text" name="imageurl" onChange={this.handleChange} value={this.state.imageurl}/></div>
               {displayCreateButton()}
            </div>
       </div>

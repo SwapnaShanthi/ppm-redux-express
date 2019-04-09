@@ -16,12 +16,12 @@
     height:20px;
 }
 .editinputboxprice{
-    margin-left: 50px;
+    margin-left: 48px;
     width:200px;
     height:20px;
 }
 .editinputboxurl{
-    margin-left: 9px;
+    margin-left: 14px;
     width:200px;
     height:20px;
 }
@@ -67,4 +67,13 @@
     padding-left:10px;
     
 
+ }
+ .errormessagerequired{
+    font-size: 12px;
+    color:rgb(175, 56, 76);
+    text-align: top;
+    padding-bottom: 10px;
+ }
+ .requiredfield{
+    color:rgb(175, 56, 76);
  }
