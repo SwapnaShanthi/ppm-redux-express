@@ -1,0 +1,61 @@
+.productlistouterdiv{
+    border:1px solid rgb(88, 86, 86);
+    margin-top:40px;
+    padding-left:20px;
+    padding-bottom:20px;
+    width:90%;
+    height:600px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    
+}
+.productlistinnerdiv{
+    margin-top:30px;
+    margin-left:45px;
+    width:20%;
+    height:300px;
+    border:1px solid rgb(88, 86, 86);
+}
+.imagestyle{
+    margin-top:5px;
+    width:50%;
+    height:150px;
+    
+}
+.titlestyle{
+  padding-top:10px;
+}
+.pricestyle{
+    padding-top:10px;
+}
+.deleteproductbuttondiv{
+    width:60%;
+    height:25px;
+    background-color: rgb(199, 44, 44);
+    border:1px solid rgb(88, 86, 86);
+    text-align: center;
+    margin-top:10px;
+    
+    margin-left:50px;
+
+}
+.deleteproductbutton{
+    margin-top:40px;
+    color:white;
+}
+.editbuttondiv{
+    width:60%;
+    height:25px;
+    background-color: rgb(228, 117, 13);
+    border:1px solid rgb(88, 86, 86);
+    text-align: center;
+    margin-top:10px;
+    margin-left:50px;
+
+}
+.editbutton{
+    margin-top:40px;
+    color:white;
+}

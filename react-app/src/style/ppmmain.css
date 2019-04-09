@@ -1,0 +1,28 @@
+h1{
+    text-align:left;
+    color:rgb(88, 86, 86);
+}
+.naviouterdiv{
+    display:flex;
+    flex-direction: row;
+}
+.mainouterdiv{
+    display:flex;
+    flex-direction: column;
+    margin-left:50px;
+
+
+
+}
+.navibarstyle{
+    margin-right:30px; 
+  
+}
+a{
+    text-decoration: none;
+    color:rgb(88, 86, 86);
+    
+}
+a:hover {
+    color:rgb(59, 56, 56);
+  }

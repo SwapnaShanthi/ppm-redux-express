@@ -1,0 +1,58 @@
+.createouterdiv{
+    border:1px solid rgb(88, 86, 86);
+    margin-top:40px;
+    padding-left:20px;
+    width:90%;
+    height:600px;
+}
+.createinnerdiv{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+}
+.inputboxtitle{
+    margin-left: 60px;
+    width:200px;
+    height:20px;
+}
+.inputboxprice{
+    margin-left: 50px;
+    width:200px;
+    height:20px;
+}
+.inputboxurl{
+    margin-left: 9px;
+    width:200px;
+    height:20px;
+}
+.inputdiv{
+    padding-bottom: 5px;
+}
+.createbutton{
+    margin-top:40px;
+   
+    color:white;
+}
+.createbuttondiv{
+    width:150px;
+    height:25px;
+    background-color: rgb(199, 44, 44);
+    border:1px solid rgb(88, 86, 86);
+    text-align: center;
+    margin-top:10px;
+    
+}
+.createdisablebutton{
+    cursor: not-allowed;
+    pointer-events: none;
+    margin-top:40px;
+
+}
+.errormessage{
+    font-size: 12px;
+    color:rgb(175, 56, 76);
+    text-align: top;
+    padding-left:10px;
+    
+
+ }
